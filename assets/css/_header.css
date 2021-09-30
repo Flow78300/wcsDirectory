@@ -1,0 +1,19 @@
+:root {
+   --bg-col: #f16b6c;
+}
+ul {
+   background-color:var(--bg-col);
+   display: inline-block;
+   justify-content: space-around;
+   color : white;
+}
+ 
+ul li  { 
+   background-color:var(--bg-col);
+   list-style: none;   
+}
+
+ul li a {
+   color: white;
+   text-decoration: none;
+}
