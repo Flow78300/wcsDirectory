@@ -27,7 +27,7 @@
 
         </section>
         <section class="links-trombi">
-            <a href="#">Cliquer ici pour accéder au trombinoscope</a>
+            <a href="trombi.php">Cliquer ici pour accéder au trombinoscope</a>
         </section>
     </main>
 
