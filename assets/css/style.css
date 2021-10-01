@@ -1,2 +1,139 @@
 @import '_header.css';
 @import '_footer.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
+
+:root {
+    --fonts-title : 'raleway', sans-serif;
+    --fonts-paragraph : 'Varela Round', sans-serif;
+    --main-color : #fff;
+    --button-color : #f76c6c;
+    --text-color : #39424e;
+}
+
+
+body {
+    margin:0;
+    padding:0;
+    font-family: var(--fonts-paragraph);
+    font-size: 0.9rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    display: flex; /* add styleFine*/
+    justify-content: center; /* add styleFine*/
+}
+
+/* -- titre commun--*//* add styleFine*/
+h1{
+    font-size: large;
+    color: #f76c;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    /*border: solid red;*/
+}
+
+.WCS-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    /*border: black solid;*/
+    background-image: url("../logoMumakil.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.WCS-img h1 {
+    font-size: 1.875rem;
+    line-height: 0.8;
+    text-align: center;
+    font-family: var(--fonts-title);
+    color: var(--text-color);
+}
+
+
+.presentation-text p {
+    font-family: var(--fonts-paragraph);
+    color: var(--text-color);
+    text-align: justify;
+    margin: auto 10px;
+}
+
+/* -- trombi mobile first--*//* add styleFine*/
+.bodyTrombi{
+    /*pour une image de fond fixe*/ 
+    background-image:url("../logoMumakil.png");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: 50%;
+    opacity: 3;
+     }
+
+
+.container {
+    border: 5px solid black;
+    padding: 10px;
+    
+}
+
+
+/*.trombi{
+background of page Trombi*/ 
+/*background-color: #f76c6c; 
+}*/ 
+
+
+
+.picture{
+    width: 90%; 
+    margin: 15% 5% 35% 5%; /* -- haut droite bas gauche--*/
+    padding: 8%;/* -- to cancel at pic add, except if you decide to keep the name on pics--*/
+    display: block;/* -- alignement--*/
+    border: 2px solid grey;/* -- to cancel at pic add --*/
+    /*background-color: #fff; /* -- to cancel at pic add --*/
+    border-radius: 10px; /* -- corner round if you like it --*/
+    height: 30vh; 
+    box-sizing: border-box; /* -- ?? je sais plus a quoi ca sert --*/
+    background-image: url("") /* -- quand on les aura ahaha!! --*/
+}
+
+/* -- contact--*//* add styleFine*/
+.formulaire {
+    margin: 0 auto;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px 30px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1rem auto;
+  }
+  
+  textarea {
+    width: 90%;
+    padding: 60px 20px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1rem auto;
+  }
+
+#submitButton {
+  float: right;
+}
