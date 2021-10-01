@@ -4,7 +4,7 @@
         <div class="columns">
             <div class="column">
                 <figure class="image image-footer has-image-centered">
-                    <img src="assets/wildcodeschool.png" alt="WCS logo">
+                <!--<img src="assets/wildcodeschool.png" alt="WCS logo">-->
                 </figure>
                 <p>
                     <strong class="has-text-weight-semibold">

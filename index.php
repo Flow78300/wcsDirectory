@@ -10,13 +10,12 @@
 </head>
 
 <body>
-    <?php include '_header.php' ?>
-    <main>
-        <section class="WCS-img">
-        <h1>Meet the Team PHP Blue-Mûmakil</h1>
-        </section>
+<?php include '_header.php' ?>
+     <main>
+         <section class="WCS-img"></section>
 
-        <section class="presentation-text">
+         <section class="presentation-text">
+             <h1>Meet the Team PHP Blue-Mûmakil</h1>
             <p>Ils étaient 66 dans cette quête du Graal, ils ne sont plus que 14,
                 guidés par Jean-François, à la fin ils finiront tous Dev!
             </p>
