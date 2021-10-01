@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
+@import url('assets/css/_footer.css');
+@import url('assets/css/_header.css');
 
 :root {
     --fonts-title : 'raleway', sans-serif;

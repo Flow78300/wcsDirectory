@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiche personnelle de Prénom NOM</title>
-    <link rel="stylesheet" href="assets/styleFine.css">
+
+    <title>Fiche Perso</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
 </head>
 
 <body>
     <?php include '_header.php'?>
-<a href="contact.php">Fiche perso</a>
+<a href="contact.php">Contact me</a>
 <img src="assets/image_profil.jpg"Logo" class="logo" width="100" height="110" align="left" />
 <section id="Etat civil">
     <p><strong>Prénom NOM </strong><br>
