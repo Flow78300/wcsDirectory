@@ -5,5 +5,4 @@
         <li><a class="wcs_link_shadow" href="https://www.wildcodeschool.com">Into the Wild Code School</a></li>
         <li><a>Parce que le developpement nous unis.</a></li>
     </ul>
-    
 </footer>
