@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
+
+:root {
+    --fonts-title : 'raleway', sans-serif;
+    --fonts-paragraph : 'Varela Round', sans-serif;
+    --main-color : #fff;
+    --button-color : #f76c6c;
+    --text-color : #39424e;
+}
+
+
+body {
+    margin:0;
+    padding:0;
+    font-family: var(--fonts-paragraph);
+    font-size: 0.9rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    /*border: solid red;*/
+}
+
+.WCS-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    /*border: black solid;*/
+    background-image: url("../elephant-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.WCS-img h1 {
+    font-size: 1.875rem;
+    line-height: 0.8;
+    text-align: center;
+    font-family: var(--fonts-title);
+    color: var(--text-color);
+}
+
+
+.presentation-text p {
+    font-family: var(--fonts-paragraph);
+    color: var(--text-color);
+    text-align: justify;
+    margin: auto 10px;
+}
