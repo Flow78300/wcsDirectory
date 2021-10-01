@@ -1,12 +1,13 @@
 
 <header>
+
 <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#">
                 <img src= "assets/wcs_resize.png" alt="Logo">
                 </a>
-<h1> Trombi Blue Mumakil </h1>
+      <h1> Trombi Blue Mumakil </h1>
 
 
 
@@ -41,3 +42,6 @@
         </div>
     </nav>
 </header>
+
+    
+

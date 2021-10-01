@@ -1,19 +1,23 @@
-:root {
-   --bg-col: #f16b6c;
-}
 ul {
-   background-color:var(--bg-col);
-   display: inline-block;
+   background: #f16b6c;
+   display: flex;
    justify-content: space-around;
-   color : white;
-}
+   padding: 12px;
+ }
  
-ul li  { 
-   background-color:var(--bg-col);
-   list-style: none;   
-}
-
-ul li a {
+ ul li {
+   list-style: none;
+ }
+ 
+ ul li a {
    color: white;
    text-decoration: none;
-}
+ }
+ 
+ ul li a:hover {
+   color: #f16b6c;
+ }
+ 
+ header {
+   text-align: left;
+ }
