@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiche Perso</title>
+    <title>Fiche personnelle de Prénom NOM</title>
     <link rel="stylesheet" href="assets/styleFine.css">
 </head>
 
@@ -13,13 +13,13 @@
     <?php include '_header.php'?>
 <a href="contact.php">Fiche perso</a>
 <img src="assets/image_profil.jpg"Logo" class="logo" width="100" height="110" align="left" />
-    <section id="Etat civil">
-    <p>Prénom NOM <br>
+<section id="Etat civil">
+    <p><strong>Prénom NOM </strong><br>
        Etudiant PHP à la Wild Code School Remote </br>
        Age <br>
        Ville <br>
        Signe astrologique <br>
-       adresse.mail@mail.com <br>
+       <em>adresse.mail@mail.com</em><br>       
     </p>
     </section>
     <section id="Biographie professionnelle"> 
@@ -40,6 +40,10 @@
                         </ul>
     </p>
     </section>
+
+    <input class="favorite styled"
+       type="button"
+       value="Contactez-moi">
 
 
 <?php include '_footer.php' ?>
