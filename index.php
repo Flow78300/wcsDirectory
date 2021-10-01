@@ -10,10 +10,11 @@
 </head>
 
 <body>
-<?php include '_header.php' ?>
+    <header>
+        <?php include '_header.php' ?>
+    </header>
      <main>
          <section class="WCS-img"></section>
-
          <section class="presentation-text">
              <h1>Meet the Team</h1>
             <p>Ils étaient 66 dans cette quête du Graal, ils ne sont plus que 14,
@@ -30,8 +31,10 @@
             <a href="trombi.php">Cliquer ici pour accéder au trombinoscope</a>
         </section>
     </main>
-
-    <?php include '_footer.php' ?>
+        <footer>
+        <?php include '_footer.php' ?>
+        </footer>
+    
 </body>
 
 </html>

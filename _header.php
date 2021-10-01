@@ -1,18 +1,21 @@
 
 <header>
+
 <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#">
-                <img src= "assets/Unknown.png" alt="Logo">
+                <img src= "assets/wcs_resize.png" alt="Logo">
                 </a>
-      
-      <ul>
-        
-        <li><a href="index.html"> Connectez vous </a></li>
-        <li><a href="family.html"> Trombinoscope </a></li>
-        <li><a href="assets.html"> Recherche Wilder par régions </a></li>
-        <li><a href="contact.html"> Espace recrutement </a></li>
+      <h1> Trombi Blue Mumakil </h1>
+
+
+
+      <ul> 
+        <li><a href="index.php"> Connectez vous </a></li>
+        <li><a href="trombi.php"> Trombinoscope </a></li>
+        <li><a href="search.php"> Recherche Wilder par régions </a></li>
+        <li><a href="recrut.php"> Espace recrutement </a></li>
       </ul>
     </nav>
 
@@ -32,11 +35,13 @@
                     <a href="#recruteur" class="navbar-item">
                         Espace recrutement
                     </a>
-                    
+
                     </a> -->
                 </div>
             </div>
         </div>
-    </nav>   
+    </nav>
 </header>
+
+    
 
