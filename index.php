@@ -10,9 +10,10 @@
 </head>
 
 <body>
-    <header>
-        <?php include '_header.php' ?>
-    </header>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <?php include '_header.php' ?>
      <main>
          <section class="WCS-img"></section>
          <section class="presentation-text">
@@ -28,13 +29,11 @@
 
         </section>
         <section class="links-trombi">
-            <a href="trombi.php">Cliquer ici pour accéder au trombinoscope</a>
+            <p>Si vous voulez les découvrir, <a href="trombi.php">veuillez suivre ce lien.</a></p>
         </section>
     </main>
-        <footer>
-        <?php include '_footer.php' ?>
-        </footer>
-    
+    <?php include '_footer.php' ?>
+    <script src="script.js"></script>
 </body>
 
 </html>
