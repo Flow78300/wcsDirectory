@@ -10,9 +10,7 @@
 </head>
 
 <body>
-    <div class="loader-container">
-        <div class="loader"></div>
-    </div>
+    <?php include '_loader.php' ?>
     <?php include '_header.php' ?>
      <main>
          <section class="WCS-img"></section>
@@ -29,7 +27,7 @@
 
         </section>
         <section class="links-trombi">
-            <p>Si vous voulez les découvrir, <a href="trombi.php">veuillez suivre ce lien.</a></p>
+            <p>Si vous voulez les découvrir <a href="trombi.php">suivez ce lien.</a></p>
         </section>
     </main>
     <?php include '_footer.php' ?>
