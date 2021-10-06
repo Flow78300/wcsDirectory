@@ -1,0 +1,144 @@
+
+@import '_header.css'; 
+@import '_footer.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
+
+
+:root {
+    --fonts-title : 'raleway', sans-serif;
+    --fonts-paragraph : 'Varela Round', sans-serif;
+    --main-color : #fff;
+    --button-color : #f76c6c;
+    --text-color : #39424e;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+
+/*.loader-container {
+  position:fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 16px solid var(--text-color);
+  border-top: 16px solid var(--button-color);
+  border-bottom: 16px solid var(--button-color);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  .hidden {
+    animation: disparition 2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes disparition {
+    100%{
+      opacity: 0;
+      display: none;
+    }
+    
+  }
+  
+*/
+
+body {
+    font-family: var(--fonts-paragraph);
+    font-size: 0.9rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    display: flex; /* add styleFine*/
+    justify-content: center; /* add styleFine*/
+    flex-direction: column;
+}
+
+/* -- titre commun--*//* add styleFine*/
+h1{
+    font-size: large;
+    color: #f76c;
+}
+
+a {
+    text-decoration: none;
+}
+/* -- titre commun--
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    /*border: solid red;
+    perspective: 51px;
+
+  flex: 1 0 auto;
+  height: 82vh;
+  width: 145vw;
+}
+*/
+
+
+
+/* -- contact--*/
+.bodyForm{
+    background:linear-gradient(105deg, #3e7c94 0%, #fff 100%);
+}
+
+#formulaire {
+    width: 90%;
+    padding: 10px 30px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    
+  }
+ 
+  /*
+  input {
+    width: 90%;
+    padding: 10px 30px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1rem auto;
+  }*/
+  
+  
+  
+  textarea {
+    width: 90%;
+    padding: 60px 20px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1rem auto;
+  }
+
+#submitButton {
+  float: right;
+}
