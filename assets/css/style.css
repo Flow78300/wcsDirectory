@@ -1,4 +1,4 @@
-@import '_header.css';
+/* @import '_header.css'; ---- fichier manquant */
 @import '_footer.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
@@ -11,17 +11,62 @@
     --text-color : #39424e;
 }
 
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.loader-container {
+  position:fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--main-color);
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 16px solid var(--text-color);
+  border-top: 16px solid var(--button-color);
+  border-bottom: 16px solid var(--button-color);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  .hidden {
+    animation: disparition 2s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes disparition {
+    100%{
+      opacity: 0;
+      display: none;
+    }
+    
+  }
+  
+
 
 body {
-    margin:0;
-    padding:0;
     font-family: var(--fonts-paragraph);
     font-size: 0.9rem;
     background-color: var(--main-color);
     color: var(--text-color);
-    /* display: flex; /* to cancel*/
-    /*justify-content: center; /* to cancel*/
-    height: 100vh;/* add height to help body to take the full place*/
+    display: flex; /* add styleFine*/
+    justify-content: center; /* add styleFine*/
+    flex-direction: column;
 }
 
 /* -- titre commun--*//* add styleFine*/
@@ -35,25 +80,30 @@ a {
 }
 
 main {
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 90vh;
     /*border: solid red;*/
     perspective: 51px;
+
+  flex: 1 0 auto;
+  height: 82vh;
+  width: 145vw;
+
 }
 
 .WCS-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-    /*border: black solid;*/
-    background-image: url("../logoMumakil.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-image: url(../logoMumakil.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .WCS-img h1 {

@@ -10,6 +10,7 @@
 </head>
 
 <body class="bodyTrombi">
+    <?php include '_loader.php' ?>
     <?php include '_header.php'?>
     
     <main class="trombi">
@@ -29,6 +30,7 @@
 
 
     <?php include '_footer.php'?>
+    <script src="script.js"></script>
 </body>
 
 </html>

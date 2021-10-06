@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="assets/css/style.cs">
     </head>
 
+
 <body class="bodyForm">
+    <?php include '_loader.php' ?>
     <?php include '_header.php'?>
 
     <form>
@@ -23,6 +25,7 @@
     </form>
 
 <?php include '_footer.php' ?>
+<script src="script.js"></script>
 </body>
 
 </html>

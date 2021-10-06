@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Fiche Perso</title>
-    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
+    <?php include '_loader.php' ?>
     <?php include '_header.php'?>
 <a href="contact.php">Contact me</a>
-<img src="assets/image_profil.jpg"Logo" class="logo" width="100" height="110" align="left" />
+<img src="assets/image_profil.jpg" class="logo" width="100" height="110" align="left" />
 <section id="Etat civil">
     <p><strong>Prénom NOM </strong><br>
        Etudiant PHP à la Wild Code School Remote </br>
@@ -49,6 +50,7 @@
 
 
 <?php include '_footer.php' ?>
+<script src="script.js"></script>
 </body>
 
 </html>
