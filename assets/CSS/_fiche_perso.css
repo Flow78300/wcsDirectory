@@ -1,0 +1,100 @@
+
+/* Titre */
+h1 {
+  text-align: center;
+}
+
+
+/* Image */
+.picture {
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  margin-top: 150px;  
+  margin-left: 145px;
+}
+
+
+/* Corps du texte */
+.partie2 article {
+  background-color: rgb(239, 245, 248);
+  height: 700px;
+  width: 600px;
+  display: inline-block;
+  margin: 1%;
+  border: 1px solid black;
+  overflow:hidden;
+  justify-content: space-between;
+}
+
+p {
+  padding-top: 10px;
+  margin-left: 25px;
+  width: 550px;
+  text-align: justify;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 140px;
+}
+
+strong {
+  color: rgb(0, 102, 255);
+}
+
+em {
+  color: gray;
+}
+
+
+/* Bouton Contact-Qu'est-ce que vous en pensez? */
+.styled {
+  margin-top: 300px;
+  margin-left: 400px;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(0, 102, 255);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgb(0, 102, 255);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Responsive (?) */
+@media screen and (max-width: 600px) {
+  body {
+    display: block;
+    background-color: white;
+    margin: auto;
+    width: 85%;
+    height: auto;
+  }
+}
+
+@media all and (min-width: 600px) {
+  strong {
+    color: lightblue;
+  }
+}
+
