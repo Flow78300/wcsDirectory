@@ -19,8 +19,9 @@ body {
     font-size: 0.9rem;
     background-color: var(--main-color);
     color: var(--text-color);
-    display: flex; /* add styleFine*/
-    justify-content: center; /* add styleFine*/
+    /* display: flex; /* to cancel*/
+    /*justify-content: center; /* to cancel*/
+    height: 100vh;/* add height to help body to take the full place*/
 }
 
 /* -- titre commun--*//* add styleFine*/
@@ -39,6 +40,7 @@ main {
     justify-content: space-between;
     height: 90vh;
     /*border: solid red;*/
+    perspective: 51px;
 }
 
 .WCS-img {
@@ -68,24 +70,25 @@ main {
     color: var(--text-color);
     text-align: justify;
     margin: auto 10px;
+    transform: rotateX(15deg) rotateY(0deg);/*perspective*/
+    transform-style: preserve-3d;/*perspective*/
 }
 
 /* -- trombi mobile first--*//* add styleFine*/
 .bodyTrombi{
     /*pour une image de fond fixe*/ 
-    background-image:url("../logoMumakil.png");
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-position:center center;
-    background-size: 50%;
-    opacity: 3;
+    background: 
+    url("../logoMumakil.png") 
+    center center/contain no-repeat fixed;
      }
 
 
-.container {
-    border: 5px solid black;
-    padding: 10px;
-    
+.container{
+    /* border: 5px solid black;*/
+    /* padding: 10px;*/
+    display: flex;/* -- alignement--*/
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -97,21 +100,41 @@ background of page Trombi*/
 
 
 .picture{
-    width: 90%; 
-    margin: 15% 5% 35% 5%; /* -- haut droite bas gauche--*/
-    padding: 8%;/* -- to cancel at pic add, except if you decide to keep the name on pics--*/
-    display: block;/* -- alignement--*/
+    width: 20vh; 
+    margin: 15% auto; /* -- haut droite bas gauche--*/
+    /*text-align:center;
+    padding: 3vh;/* -- to cancel at pic add, except if you decide to keep the name on pics--*/
+    
+    /*position:absolute transform;*/
     border: 2px solid grey;/* -- to cancel at pic add --*/
     /*background-color: #fff; /* -- to cancel at pic add --*/
     border-radius: 10px; /* -- corner round if you like it --*/
     height: 30vh; 
     box-sizing: border-box; /* -- ?? je sais plus a quoi ca sert --*/
-    background-image: url("") /* -- quand on les aura ahaha!! --*/
+    box-shadow: 7px 7px 5px 0px rgba(50, 118, 163, 0.75);/* -- ombre photo --*/
+    background-image: url(""); /* -- quand on les aura ahaha!! --*/
+    animation: myAnim 1s ease 0s 1 normal forwards;/* -- animation --*/
+    
 }
+/*@keyframes myAnim {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+  }*/
+@keyframes myAnim {
+    0% {opacity: 0;
+      transform: translateX(-250px);}
+    100% {opacity: 1;
+      transform: translateX(0);}
+  }
 
 /* -- contact--*//* add styleFine*/
+.bodyForm{
+    background:linear-gradient(105deg, #3e7c94 0%, #fff 100%);
+}
+
 .formulaire {
     margin: 0 auto;
+    
   }
   
   input {
