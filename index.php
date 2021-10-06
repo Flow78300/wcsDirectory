@@ -24,10 +24,10 @@
                 </br>
                 Chacun d'entre vous est invité à mettre à jour sa fiche personnelle régulièrement. </br>
             </p>
-
         </section>
         <section class="links-trombi">
-            <p>Si vous voulez les découvrir <a href="trombi.php">suivez ce lien.</a></p>
+            <!-- <p>Si vous voulez les découvrir <a href="trombi.php">suivez ce lien.</a></p> -->
+            <button><a href="trombi.php">Pour les découvrir</a></button>
         </section>
         
 
