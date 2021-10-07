@@ -76,7 +76,6 @@ h1{
 
 a {
     text-decoration: none;
-    color: var(--text-color);
 }
 
 main {
@@ -106,45 +105,22 @@ main {
   background-size: cover;
 }
 
-.presentation-text {
-  /* border: solid 2px red; */
-  width: 100vw;
-  height: 75vh;
-
-}
-
-.presentation-text h1 {
+.WCS-img h1 {
     font-size: 1.875rem;
     line-height: 0.8;
     text-align: center;
     font-family: var(--fonts-title);
-    color: var(--button-color);
+    color: var(--text-color);
 }
 
-.links-trombi {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-}
 
-button {
-  background-color: cornflowerblue;
-  margin: 20px 0;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-}
-
-button a {
-  color: var(--main-color);
-}
 .presentation-text p {
     font-family: var(--fonts-paragraph);
     color: var(--text-color);
     text-align: justify;
-    margin: auto 35px;
-    /* transform: rotateX(15deg) rotateY(0deg);/*perspective*/
-    /* transform-style: preserve-3d; *//*perspective*/ 
+    margin: auto 10px;
+    transform: rotateX(15deg) rotateY(0deg);/*perspective*/
+    transform-style: preserve-3d;/*perspective*/
 }
 
 /* -- trombi mobile first--*//* add styleFine*/
