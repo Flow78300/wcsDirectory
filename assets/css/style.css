@@ -9,6 +9,8 @@
     --main-color : #fff;
     --button-color : #f76c6c;
     --text-color : #39424e;
+
+    --menu-height: 80px;
 }
 
 * {
@@ -64,8 +66,7 @@ body {
     display: flex; /* add styleFine*/
     justify-content: center; /* add styleFine*/
     flex-direction: column;
-    padding-top: 80px;
-    margin: 0;
+    margin: var(--menu-height) 0 0 0;
 }
 
 .presentation-text h1 {
@@ -214,17 +215,10 @@ background of page Trombi*/
     
   }
   
-  input {
-    width: 90%;
-    padding: 10px 30px;
-    display: block;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin: 1rem auto;
-  }
+
   
-  textarea {
+
+  .input-control {
     width: 90%;
     padding: 60px 20px;
     display: block;
