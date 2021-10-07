@@ -6,64 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiche personnelle de Prénom NOM</title>
-    <link rel="stylesheet" href="assets/css/_fiche_perso.css">
+    <link rel="stylesheet" href="assets/css/fichier_perso.css">
 </head>
 
 <body>
-    <?php include '_header.php'?>
+<?php include '_header.php'?>
 <a href="contact.php">Fiche perso</a>
-<section class="partie1">
-     <h1><strong>Prénom NOM</strong> </h1>
-</section>
 
-<section class="partie2">
-      <article>
+<div class="box">
+<section class="partie1">      
         <section id="Image"> 
-            <img src="assets/image_profil.jpg"Picture" class="picture"/>
-        </section>     
-      </article>
+            <img src="assets/icon_profil.png" class="photo"/>               
+        </section>   
+
+<aside>        
+  <section class="identité">
+    <p><span>Prénom NOM</span><p> 
+  </section> 
+</aside>
 
 
-      <article> 
+<section class="partie2">        
+<article> 
         <section id="Etat civil"> 
-        <p> Etudiant PHP à la Wild Code School Remote <br>
+         <p><span>Etudiant PHP à la Wild Code School Remote</span> <br>
             Age <br>
             Ville <br>
             Signe astrologique <br>
-            <em>adresse.mail@mail.com</em><br>       
-         </p>
-            
-         </section>
+          <em>adresse.mail@mail.com</em><br>       
+         </p>            
+         </section> 
+
           <section id="Biographie professionnelle"> 
-          <p><strong>Projet professionnel:</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quos cupiditate?
+          <p><span style="color:rgba(0, 174, 255, 0.61)">Projet professionnel:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quos cupiditate?
           A, dolores accusamus hic consequuntur praesentium veniam enim saepe nobis, sed nihil culpa! Asperiores ratione 
-          sint exercitationem magnam. </br> </p>
-          <p><strong> Parcours:</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam molestiae aliquam
+          sint exercitationem magnam.</br></p>
+          <p><span style="color:rgba(0, 174, 255, 0.61)">Parcours:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam molestiae aliquam
           magnam mollitia perferendis amet suscipit doloremque eos maxime vel labore voluptatum eveniet tempore dicta, 
           ratione officiis similique ipsa. Velit.</br></p>               
-          <p><strong>Loisirs, passions:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          <p><span style="color:rgba(0, 174, 255, 0.61)">Loisirs, passions:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Ad tempore ipsam dicta autem iusto at doloremque repudiandae, incidunt dolor unde non cupiditate 
           placeat tenetur optio corporis esse! Pariatur, deleniti dolores!</br></p>
-          <p><strong>Personnalité:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          <p><span style="color:rgba(0, 174, 255, 0.61)">Personnalité:</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           Placeat dolore at similique reprehenderit ad rerum perferendis pariatur sed dolorum illum rem minus, 
-          cupiditate ipsam! Aliquid vero quidem a odio at. </br></p>
-          <p><strong>Liens professionnels:</strong> <ul><li>GitHub</li> </br>
-                                                        <li>LinkedIn</li> </br>
-                                                        <li>Portfolio</li> </br>
-                                                        <li>CV</li> </br>
-                                                    </ul>
+          cupiditate ipsam! Aliquid vero quidem a odio at.</br></p>
+          <p><span style="color:rgba(0, 174, 255, 0.61)">Liens professionnels:</span> <ul><li><img src="assets/icon_github.png" class="logo"/> GitHub</li></br>
+                                                                <li><img src="assets/logo_linkedin.png" class="logo"/> LinkedIn</li></br>
+                                                                <li><img src="assets/icon_livre.png" class="logo"/>Portfolio</li></br>
+                                                                <li><img src="assets/logo_cv.png" class="logo"/>CV</li></br>
+                                                            </ul>
           </p>
-         <input class="favorite styled"
+        
+        </section>        
+      </article>      
+</section>
+</div>
+
+
+
+
+
+
+
+ <input class="favorite styled"
           type="button"
-          value="Contactez-moi">  
-        </section>
-        </div>
-      </article>
-    </section>
-    
+          value="Contactez-moi">
+            
 
 
 <?php include '_footer.php' ?>
 </body>
+
 
 </html>
