@@ -1,0 +1,147 @@
+
+@import '_header.css'; 
+@import '_footer.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
+
+
+:root {
+    --fonts-title : 'raleway', sans-serif;
+    --fonts-paragraph : 'Varela Round', sans-serif;
+    --main-color : #fff;
+    --button-color : #f76c6c;
+    --text-color : #39424e;
+}
+
+
+/* * {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+} */
+
+
+body {
+    font-family: var(--fonts-paragraph);
+    font-size: 0.9rem;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    display: flex; /* add styleFine*/
+    justify-content: center; /* add styleFine*/
+    flex-direction: column;
+}
+
+/* -- titre contact--*/
+form h1{
+  font-size: 50px;
+  color:#528bc0;
+  text-align:center;
+  padding: 40px;
+  margin: 20px;
+}
+/* -- titre commun--
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    /*border: solid red;
+    perspective: 51px;
+
+  flex: 1 0 auto;
+  height: 82vh;
+  width: 145vw;
+}
+*/
+
+/* -- trombi mobile first--*/ 
+.bodyTrombi{/*--- A BASCULER sur INDEX CSS affichage image fonctionne sur trombi ---*/ 
+    /*pour une image de fond fixe*/ 
+    background-position:center center;
+    background-repeat: no-repeat; 
+    background-image: url("../../assets/css/logoT.png"),
+  linear-gradient(105deg, #528bc0 -70%, #fff 35%);
+     }
+
+/* -- affichage mobil first--*/ 
+
+/* .container{/* -- confirmer l'utilité de ce truc--*/
+    /* border: 5px solid black;*/
+    /* padding: 10px;
+    display: flex;/* -- alignement--
+    flex-direction: column;
+    align-items: center;
+  } */
+
+
+  /* -- affichage carrousel essai 1--*/ 
+  .picture {
+    display: flex;
+    /* overflow-x: scroll; --Affiche une bande en bas de photo*/
+    overflow-x: hidden;
+    padding: 1rem 0;
+    margin-left: 1rem; 
+    flex: 1 0 250px;
+}
+
+  .container {
+      display: flex;
+      overflow-x: scroll;
+      padding: 1rem 0;
+      scroll-snap-type: x mandatory;
+  }
+  
+  .container {
+      flex: 1 0 250px;
+      margin-left: 1rem;
+      scroll-snap-align: start;
+  }
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+} 
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+    
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:  #528bc0;
+    border-radius: 10px;
+    
+}  
+
+/* -- affichage PORTABLE En VERTICAL--*/
+
+ .picture{ /* -- A CONSERVER et configurer--*/
+    width: 20vh; 
+    margin: 15% auto; /* -- haut droite bas gauche--*/
+    text-align:center;
+    padding: 3vh;/* -- to cancel at pic add, except if you decide to keep the name on pics--*/
+    /*position:absolute transform;*/
+    border: 2px solid grey;/* -- to cancel at pic add --*/
+    /*background-color: #fff; /* -- to cancel at pic add --*/
+    border-radius: 10px; /* -- corner round if you like it --*/
+    height: 30vh; 
+     box-sizing: border-box; /* -- ?? je sais plus a quoi ca sert --*/
+    box-shadow: 7px 7px 5px 0px rgba(50, 118, 163, 0.75);/* -- ombre photo --*/
+    background-image: url(""); /* -- quand on les aura ahaha!! --*/
+     animation: myAnim 1s ease 0s 1 normal forwards;/* -- animation --*/
+    
+}
+ 
+/*@keyframes myAnim {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+  }*/
+ @keyframes myAnim {
+    0% {opacity: 0;
+      transform: translateX(-250px);}
+    100% {opacity: 1;
+      transform: translateX(0);}
+  }
+ 
+ 

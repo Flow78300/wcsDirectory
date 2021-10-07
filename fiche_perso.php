@@ -38,13 +38,13 @@
           <p><strong>Projet professionnel:</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quos cupiditate?
           A, dolores accusamus hic consequuntur praesentium veniam enim saepe nobis, sed nihil culpa! Asperiores ratione 
           sint exercitationem magnam. </br> </p>
-          <p><strong> Parcours:</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam molestiae aliquam
+          <p><strong> Parcours:</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam molestiae aliquam
           magnam mollitia perferendis amet suscipit doloremque eos maxime vel labore voluptatum eveniet tempore dicta, 
           ratione officiis similique ipsa. Velit.</br></p>               
-          <p><strong>Loisirs, passions:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          <p><strong>Loisirs, passions:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Ad tempore ipsam dicta autem iusto at doloremque repudiandae, incidunt dolor unde non cupiditate 
           placeat tenetur optio corporis esse! Pariatur, deleniti dolores!</br></p>
-          <p><strong>Personnalité:</strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          <p><strong>Personnalité:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           Placeat dolore at similique reprehenderit ad rerum perferendis pariatur sed dolorum illum rem minus, 
           cupiditate ipsam! Aliquid vero quidem a odio at. </br></p>
           <p><strong>Liens professionnels:</strong> <ul><li>GitHub</li> </br>

@@ -1,0 +1,140 @@
+
+@import '_header.css'; 
+@import '_footer.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
+
+
+:root {
+    --fonts-title : 'raleway', sans-serif;
+    --fonts-paragraph : 'Varela Round', sans-serif;
+    --main-color : #fff;
+    --button-color : #f76c6c;
+    --text-color : #39424e;
+}
+
+/* * {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+} */
+
+ /**---------------- Media query ----------------**/
+ @media only screen and (min-width: 48em) { 
+	.demi-colonne {
+		width: 50%;
+	}
+}
+
+
+/* -- loader to insert --*/
+
+
+/* -- titre contact--*/
+form h1{
+  font-size: 50px;
+  color:#528bc0;
+  text-align:center;
+  padding: 40px;
+  margin: 20px;
+}
+
+
+/* -- contact--*/
+.bodyForm{
+  background-position:center center;
+  background-repeat: no-repeat; 
+  background-image: url("../../assets/css/logoT.png"),
+  linear-gradient(105deg, #528bc0 -70%, #fff 35%);
+}
+
+#formulaire {
+    max-width:600px ;/*-- à modifier en fonction de la largeur désirée --*/
+	  margin:0 auto;
+    width:100%;
+    text-align:center;
+  }
+    
+  .rang-form {
+    width: 100%;
+  }
+
+  .demi-colonne, .colonne {
+    float: left;
+    position: relative;
+    padding: 0.8rem;
+    width:100%;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/**-----le bouton d’envoi ------**/
+
+#button{
+	float: right;
+	color: #528bc0; 
+      font-family: 'Noto Sans', sans-serif;
+      border-color: #528bc0; 
+      font-size: 14px; 
+  	  line-height: 49px; 
+      height: 49px; 
+      font-weight: 600; 
+      background-color: white; 
+      border-radius: 4px; 
+          -moz-border-radius: 4px; 
+          -webkit-border-radius: 4px; 
+       text-transform: uppercase; 
+       border-width: 2px;  
+       padding-left: 26px; 
+       padding-right: 26px;
+}
+
+#button:hover{
+	background: #528bc0;
+      color: #ffffff;
+  }
+
+/**---------------- champs ----------------**/
+
+/* input-control{
+    display: block;
+    border: 2px solid #528bc0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    background-color: white;
+} */
+  input {
+    /* width: 90%; */
+    padding: 10px 30px;
+    display: block;
+    border: 2px solid #528bc0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    background-color: white; 
+  }
+  
+  textarea {
+    width: 90%;
+    padding: 60px 20px;
+    min-width: 300px;
+    max-width: 1400px;
+    display: block;
+    border: 2px solid #528bc0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    background-color: white;
+  }
+
+
