@@ -14,54 +14,12 @@
 }
 
 
-* {
+/* * {
   box-sizing: border-box;
   margin:0;
   padding:0;
-}
+} */
 
-
-/*.loader-container {
-  position:fixed;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: var(--main-color);
-}
-
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 16px solid var(--text-color);
-  border-top: 16px solid var(--button-color);
-  border-bottom: 16px solid var(--button-color);
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
-  }
-
-  .hidden {
-    animation: disparition 2s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes disparition {
-    100%{
-      opacity: 0;
-      display: none;
-    }
-    
-  }
-  
-*/
 
 body {
     font-family: var(--fonts-paragraph);
@@ -73,14 +31,13 @@ body {
     flex-direction: column;
 }
 
-/* -- titre commun--*//* add styleFine*/
-h1{
-    font-size: large;
-    color: #f76c;
-}
-
-a {
-    text-decoration: none;
+/* -- titre contact--*/
+form h1{
+  font-size: 50px;
+  color:#528bc0;
+  text-align:center;
+  padding: 40px;
+  margin: 20px;
 }
 /* -- titre commun--
 main {
@@ -101,89 +58,90 @@ main {
 /* -- trombi mobile first--*/ 
 .bodyTrombi{/*--- A BASCULER sur INDEX CSS affichage image fonctionne sur trombi ---*/ 
     /*pour une image de fond fixe*/ 
-    background: 
-    url("../logoMumakil.png") 
-    center center/contain no-repeat fixed;
+    background-position:center center;
+    background-repeat: no-repeat; 
+    background-image: url("../../assets/css/logoT.png"),
+  linear-gradient(105deg, #528bc0 -70%, #fff 35%);
      }
 
+/* -- affichage mobil first--*/ 
 
-.container{/* -- confirmer l'utilité de ce truc--*/
+/* .container{/* -- confirmer l'utilité de ce truc--*/
     /* border: 5px solid black;*/
-    /* padding: 10px;*/
-    display: flex;/* -- alignement--*/
+    /* padding: 10px;
+    display: flex;/* -- alignement--
     flex-direction: column;
     align-items: center;
+  } */
+
+
+  /* -- affichage carrousel essai 1--*/ 
+  .picture {
+    display: flex;
+    /* overflow-x: scroll; --Affiche une bande en bas de photo*/
+    overflow-x: hidden;
+    padding: 1rem 0;
+    margin-left: 1rem; 
+    flex: 1 0 250px;
 }
 
+  .container {
+      display: flex;
+      overflow-x: scroll;
+      padding: 1rem 0;
+      scroll-snap-type: x mandatory;
+  }
+  
+  .container {
+      flex: 1 0 250px;
+      margin-left: 1rem;
+      scroll-snap-align: start;
+  }
 
-/*.trombi{
-background of page Trombi*/ 
-/*background-color: #f76c6c; 
-}*/ 
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+} 
 
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+    
+}
 
+::-webkit-scrollbar-thumb {
+    background-color:  #528bc0;
+    border-radius: 10px;
+    
+}  
 
-.picture{ /* -- A CONSERVER et configurer--*/
+/* -- affichage PORTABLE En VERTICAL--*/
+
+ .picture{ /* -- A CONSERVER et configurer--*/
     width: 20vh; 
     margin: 15% auto; /* -- haut droite bas gauche--*/
-    /*text-align:center;
+    text-align:center;
     padding: 3vh;/* -- to cancel at pic add, except if you decide to keep the name on pics--*/
-    
     /*position:absolute transform;*/
     border: 2px solid grey;/* -- to cancel at pic add --*/
     /*background-color: #fff; /* -- to cancel at pic add --*/
     border-radius: 10px; /* -- corner round if you like it --*/
     height: 30vh; 
-    box-sizing: border-box; /* -- ?? je sais plus a quoi ca sert --*/
+     box-sizing: border-box; /* -- ?? je sais plus a quoi ca sert --*/
     box-shadow: 7px 7px 5px 0px rgba(50, 118, 163, 0.75);/* -- ombre photo --*/
     background-image: url(""); /* -- quand on les aura ahaha!! --*/
-    animation: myAnim 1s ease 0s 1 normal forwards;/* -- animation --*/
+     animation: myAnim 1s ease 0s 1 normal forwards;/* -- animation --*/
     
 }
-
+ 
 /*@keyframes myAnim {
     0% {transform: scale(0);}
     100% {transform: scale(1);}
   }*/
-@keyframes myAnim {
+ @keyframes myAnim {
     0% {opacity: 0;
       transform: translateX(-250px);}
     100% {opacity: 1;
       transform: translateX(0);}
   }
-
-/* -- contact--*/
-.bodyForm{
-    background:linear-gradient(105deg, #3e7c94 0%, #fff 100%);
-}
-
-.formulaire {
-    margin: 0 auto;
-    
-  }
  
-  
-  input {
-    width: 90%;
-    padding: 10px 30px;
-    display: block;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin: 1rem auto;
-  }
-  
-  
-  textarea {
-    width: 90%;
-    padding: 60px 20px;
-    display: block;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin: 1rem auto;
-  }
-
-#submitButton {
-  float: right;
-}
+ 

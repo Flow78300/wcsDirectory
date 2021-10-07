@@ -13,132 +13,128 @@
     --text-color : #39424e;
 }
 
-
-* {
+/* * {
   box-sizing: border-box;
   margin:0;
   padding:0;
+} */
+
+ /**---------------- Media query ----------------**/
+ @media only screen and (min-width: 48em) { 
+	.demi-colonne {
+		width: 50%;
+	}
 }
 
 
-/*.loader-container {
-  position:fixed;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: var(--main-color);
+/* -- loader to insert --*/
+
+
+/* -- titre contact--*/
+form h1{
+  font-size: 50px;
+  color:#528bc0;
+  text-align:center;
+  padding: 40px;
+  margin: 20px;
 }
-
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 16px solid var(--text-color);
-  border-top: 16px solid var(--button-color);
-  border-bottom: 16px solid var(--button-color);
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: translate(-50%, -50%) rotate(0deg); }
-    100% { transform: translate(-50%, -50%) rotate(360deg); }
-  }
-
-  .hidden {
-    animation: disparition 2s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes disparition {
-    100%{
-      opacity: 0;
-      display: none;
-    }
-    
-  }
-  
-*/
-
-body {
-    font-family: var(--fonts-paragraph);
-    font-size: 0.9rem;
-    background-color: var(--main-color);
-    color: var(--text-color);
-    display: flex; /* add styleFine*/
-    justify-content: center; /* add styleFine*/
-    flex-direction: column;
-}
-
-/* -- titre commun--*//* add styleFine*/
-h1{
-    font-size: large;
-    color: #f76c;
-}
-
-a {
-    text-decoration: none;
-}
-/* -- titre commun--
-main {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 90vh;
-    /*border: solid red;
-    perspective: 51px;
-
-  flex: 1 0 auto;
-  height: 82vh;
-  width: 145vw;
-}
-*/
-
 
 
 /* -- contact--*/
 .bodyForm{
-    background:linear-gradient(105deg, #3e7c94 0%, #fff 100%);
+  background-position:center center;
+  background-repeat: no-repeat; 
+  background-image: url("../../assets/css/logoT.png"),
+  linear-gradient(105deg, #528bc0 -70%, #fff 35%);
 }
 
 #formulaire {
-    width: 90%;
-    padding: 10px 30px;
-    display: block;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin: 1rem auto;
-    
+    max-width:600px ;/*-- à modifier en fonction de la largeur désirée --*/
+	  margin:0 auto;
+    width:100%;
+    text-align:center;
   }
- 
-  /*
-  input {
-    width: 90%;
-    padding: 10px 30px;
+    
+  .rang-form {
+    width: 100%;
+  }
+
+  .demi-colonne, .colonne {
+    float: left;
+    position: relative;
+    padding: 0.8rem;
+    width:100%;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/**-----le bouton d’envoi ------**/
+
+#button{
+	float: right;
+	color: #528bc0; 
+      font-family: 'Noto Sans', sans-serif;
+      border-color: #528bc0; 
+      font-size: 14px; 
+  	  line-height: 49px; 
+      height: 49px; 
+      font-weight: 600; 
+      background-color: white; 
+      border-radius: 4px; 
+          -moz-border-radius: 4px; 
+          -webkit-border-radius: 4px; 
+       text-transform: uppercase; 
+       border-width: 2px;  
+       padding-left: 26px; 
+       padding-right: 26px;
+}
+
+#button:hover{
+	background: #528bc0;
+      color: #ffffff;
+  }
+
+/**---------------- champs ----------------**/
+
+/* input-control{
     display: block;
-    border: 1px solid black;
+    border: 2px solid #528bc0;
     border-radius: 10px;
     box-sizing: border-box;
     margin: 1rem auto;
-  }*/
-  
-  
+    background-color: white;
+} */
+  input {
+    /* width: 90%; */
+    padding: 10px 30px;
+    display: block;
+    border: 2px solid #528bc0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    background-color: white; 
+  }
   
   textarea {
     width: 90%;
     padding: 60px 20px;
+    min-width: 300px;
+    max-width: 1400px;
     display: block;
-    border: 1px solid black;
+    border: 2px solid #528bc0;
     border-radius: 10px;
     box-sizing: border-box;
     margin: 1rem auto;
+    background-color: white;
   }
 
-#submitButton {
-  float: right;
-}
+
