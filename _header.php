@@ -17,7 +17,7 @@
       </div>
     </nav>
     <div class="title">
-      <h2> &lt;?php blablablabla ?&gt; </h2>
+      <h2> &lt;?php $wcsDirectory; ?&gt; </h2>
     </div>
   </nav>
 </header>
