@@ -5,19 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700&family=Varela+Round&display=swap');
 
 
-:root {
-    --fonts-title : 'raleway', sans-serif;
-    --fonts-paragraph : 'Varela Round', sans-serif;
-    --main-color : #fff;
-    --button-color : #f76c6c;
-    --text-color : #39424e;
-}
 
-/* * {
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-} */
 
  /**---------------- Media query ----------------**/
  @media only screen and (min-width: 48em) { 
@@ -42,9 +30,9 @@ form h1{
 
 /* -- contact--*/
 .bodyForm{
-  background-position:center center;
-  background-repeat: no-repeat; 
-  background-image: url("../../assets/css/logoT.png"),
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/css/logoT.png"), 
   linear-gradient(105deg, #528bc0 -70%, #fff 35%);
 }
 
