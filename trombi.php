@@ -15,7 +15,7 @@
                 $i = 0;
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) : ?>
                     <div class="trombi-card">
-                        <img src="<?= $data[9] ?>" alt="">
+                        <img src="/assets/images/<?= $data[9] ?>" alt="">
                         <div class="trombi-card-body">
                             <h3><?= $data[1] ?> <?= $data[0] ?></h3>
                             <p>

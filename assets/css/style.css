@@ -216,15 +216,16 @@ background of page Trombi*/
 
 /* -- contact--*//* add styleFine*/
 .bodyForm{
-    background:linear-gradient(105deg, #3e7c94 0%, #fff 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/css/logoT.png"),
+  linear-gradient(105deg, #528bc0 -70%, #fff 35%);
 }
 
 .formulaire {
     margin: 0 auto;
     
   }
-  
-
   
 
   .input-control {
