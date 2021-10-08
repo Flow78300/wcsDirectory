@@ -1,33 +1,53 @@
-
 /* Titre */
-h1 {
+  .identite {
+    font-size: 35px;    
     text-align: center;
+    font-weight: bold;
+    margin-left: 135px;  
+    margin-top: 10px;   
+    margin-bottom: 10px;     
+    background: -webkit-linear-gradient(white, rgba(0, 68, 255, 0.61));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
   }
   
   
   /* Image */
-  .picture {
-    width: 350px;
-    height: 450px;
-    border: 1px solid black;
+  .photo {
+    width: 300px;    
+    border-radius: 10px;
     margin-top: 150px;  
-    margin-left: 145px;
+    margin-left: 150px; 
+    margin-bottom: 10px;  
   }
   
+  em {
+    color: grey;
+  }
+
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
   
   /* Corps du texte */
   .partie2 article {
     background-color: rgb(239, 245, 248);
-    height: 700px;
     width: 600px;
     display: inline-block;
     margin: 1%;
-    border: 1px solid black;
-    border-radius: 8px;
-    overflow:hidden;
-    justify-content: space-between;
+    margin-top: 2px;
+    border: 1px solid rgb(239, 245, 248);
+    border-radius: 10px;
+    overflow:hidden;      
   }
   
+  .partie2 h2 {
+    padding-left: 1.5rem;
+    padding-bottom: 0.2rem;    
+    color:rgba(0, 174, 255, 0.61);
+  }
+
   p {
     padding-top: 10px;
     margin-left: 25px;
@@ -37,22 +57,29 @@ h1 {
   
   ul li {
     list-style: none;
-    margin-left: 140px;
+    margin-left: 180px;
   }
   
-  strong {
-    color: rgb(0, 102, 255);
+   span {
+    font-weight: bold;
   }
   
-  em {
-    color: gray;
+  .blue{
+    font-weight: bold;
+    color: rgba(0, 174, 255, 0.61);
   }
+
+  .box {
+    display: flex;
+    justify-content: center;
+  }
+
   
-  
-  /* Bouton Contact-Qu'est-ce que vous en pensez? */
+  /* Bouton Contact */
   .styled {
-    margin-top: 300px;
-    margin-left: 400px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 1035px;
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -61,7 +88,7 @@ h1 {
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
-    background-color: rgb(0, 102, 255);
+    background-color: rgba(0, 174, 255, 0.61);
     background-image: linear-gradient(
       to top left,
       rgba(0, 0, 0, 0.2),
@@ -95,7 +122,7 @@ h1 {
   
   @media all and (min-width: 600px) {
     strong {
-      color: lightblue;
+      color: rgb(173, 182, 230);
     }
   }
   
