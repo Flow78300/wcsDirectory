@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
+<?php include '_head.php' ?>
 
 <body class="bodyTrombi">
 
@@ -22,7 +13,7 @@
         <section class="trombi-wrapper">
             <!-- <div class="carousel"> **ESSAI CAROUSEL2-->
             <?php
-            $handle = fopen("data.csv", "r");
+            $handle = fopen("./assets/data.csv", "r");
             if ($handle) :
                 $i = 0;
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) : ?>
