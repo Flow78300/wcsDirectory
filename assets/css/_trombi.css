@@ -75,8 +75,9 @@ body {
 .trombi-card {
   border-radius: 10px;
   box-shadow: var(--box-shadow-trombi);
-  background-color:transparent;
+  background-color: rgb(255 255 255 / 80%);
 }
+
 
 .trombi-card img{
   width: 100%;
