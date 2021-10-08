@@ -9,7 +9,7 @@
     --fonts-title : 'raleway', sans-serif;
     --fonts-paragraph : 'Varela Round', sans-serif;
     --main-color : #fff;
-    --button-color : #f76c6c;
+    --button-color : #528bc0;
     --text-color : #39424e;
 
     --menu-height: 80px;
@@ -34,8 +34,8 @@
   top: 50%;
   left: 50%;
   border: 16px solid var(--text-color);
-  border-top: 16px solid var(--button-color);
-  border-bottom: 16px solid var(--button-color);
+  border-top: 16px solid #f76c6c;
+  border-bottom: 16px solid #f76c6c;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -75,20 +75,16 @@ img {
   max-width: 100%;
 }
 
-.presentation-text h1 {
-  font-family: var(--fonts-title);
-  color: var(--button-color);
-  text-align: center;
-}
-
-.presentation-text p {
-  text-align: justify;
+.presentation-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
 }
 
 a {
     text-decoration: none;
 }
-
 
 .WCS-img {
   width: 100vw;
@@ -103,7 +99,7 @@ a {
     font-family: var(--fonts-paragraph);
     color: var(--text-color);
     text-align: justify;
-    margin: auto 10px;
+    margin: auto 25px;
     transform: rotateX(15deg) rotateY(0deg);/*perspective*/
     transform-style: preserve-3d;/*perspective*/
 }
@@ -114,10 +110,16 @@ a {
   margin: 10px;
 }
 
-button {
+.button {
+  font-family: var(--fonts-title);
+  color: var(--main-color);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
   background-color: #528bc0;
   border-radius: 12px;
-  border:0;
+  border: 0;
   animation: animation 2000ms linear both;
 }
 
