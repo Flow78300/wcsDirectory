@@ -11,8 +11,8 @@
         <ul id="menu">
           <li><a href="index.php">Home</a></li>
           <li><a href="trombi.php">Trombi</a></li>
-          <li><a href="#">Wilders par région</a></li>
-          <li><a href="#">Recruteurs</a></li>
+          <li><a href="search.php">Wilders par région</a></li>
+          <li><a href="recrut.php">Recruteurs</a></li>
         </ul>
       </div>
     </nav>
