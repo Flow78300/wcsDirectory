@@ -10,6 +10,7 @@
 </head>
 
 <body class="bodyTrombi">
+
     <?php
     // include '_loader.php' 
     ?>
@@ -34,6 +35,7 @@
                     </p>
                     <a class="btn" href="/fiche_perso.php?user=<?=$i?>">Plus d'info</a>
                 </div>
+
             </div>
                 <?php ++$i;endwhile; ?>
             <?php endif; ?>
