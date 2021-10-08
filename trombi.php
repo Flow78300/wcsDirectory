@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 
 <body class="bodyTrombi">
@@ -22,16 +23,23 @@
         <section class="trombi-wrapper">
             <!-- <div class="carousel"> **ESSAI CAROUSEL2-->
             <?php
-            $handle = fopen("data.csv", "r");
+            $handle = fopen("./assets/data.csv", "r");
             if ($handle) :
                 $i = 0;
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) : ?>
             <div class="trombi-card">
-                <img src="https://fakeimg.pl/600x300/?text=<?=$data[0]?>" alt="">
+                <img src="<?=$data[9]?>" alt="">
                 <div class="trombi-card-body">
-                    <h3><?=$data[0]?> <?=$data[1]?></h3>
+                    <h3><?=$data[1]?> <?=$data[0]?></h3>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor repellat sapiente architecto voluptatem beatae ut numquam pariatur dolorem! Delectus amet est cum magni, dolorem voluptatibus totam similique doloremque fugit nulla.
+                        <i class="ion-egg"></i>
+                        <?=$data[2]?></br>
+                        <i class="ion-university"></i> 
+                        <?=$data[8]?></br>
+                        <i class="ion-planet"></i> 
+                        <?=$data[4]?></br>
+                        <i class="ion-location"></i>
+                        <?=$data[3]?></br>
                     </p>
                     <a class="btn" href="/fiche_perso.php?user=<?=$i?>">Plus d'info</a>
                 </div>
