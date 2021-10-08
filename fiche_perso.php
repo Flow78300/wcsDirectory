@@ -2,7 +2,6 @@
 
 <body>
 <?php include '_header.php'?>
-<a href="contact.php">Fiche perso</a>
 
 <?php $user = $_GET['user']; ?>
 
@@ -29,21 +28,20 @@ if ($user == $i): ?>
 <section class="partie2">        
 <article> 
         <section id="Etat civil"> 
-         <p><span>Etudiant PHP à la Wild Code School Remote</span> <br>
-            Age: <?php echo $data[2] ?> ans <br>
-            Ville: <?php echo $data[3] ?> <br>
-            Signe astrologique: <?php echo $data[4] ?> <br>
-          <em>Adresse mail: <?php echo $data[5] ?></em><br>       
+          <h2>Etudiant(e) PHP à la Wild Code School Remote</h2>
+         <p>
+            Age : <?php echo $data[2] ?> ans <br>
+            Ville : <?php echo $data[3] ?> <br>
+            Signe astrologique : <?php echo $data[4] ?> <br>
+          <em>Adresse mail : <a href="mailto:<?php echo $data[5] ?>"><?php echo $data[5] ?></a></em><br>       
          </p>            
          </section> 
 
           <section id="Biographie professionnelle"> 
-          <p><span style="color:rgba(0, 174, 255, 0.61)">Projet professionnel, parcours, loisirs, passions et personnalité:</span><?php echo $data[6] ?></p>
-       
-          <p><span style="color:rgba(0, 174, 255, 0.61)">Liens professionnels:</span><img src="assets/icon_livre.png" class="photo"/> <?php echo $data[7] ?></br>
-                                                                
-          </p>
-        
+            <h2>Projet professionnel, parcours, loisirs, passions et personnalité</h2>
+            <p><?php echo $data[6] ?></p>
+            <h2>Liens professionnels</h2>
+            <p><i class="icon ion-pound"></i>  <?php echo $data[7] ?></p>
         </section>        
       </article>      
 </section>
@@ -52,17 +50,8 @@ if ($user == $i): ?>
   <?php ++$i;endwhile; ?>
 <?php endif; ?>
 
-
-
-
-
-
- <input class="favorite styled"
-          type="button"
-          value="Contactez-moi">
+<a class="favorite styled" href="/contact.php">Contactez-moi</a>
             
-
-
 <?php include '_footer.php' ?>
 </body>
 
