@@ -17,7 +17,7 @@
       </div>
     </nav>
     <div class="title">
-      <h2> &lt;?php $blueMumakilDirectory; ?&gt; </h2>
+      <h2> &lt;?php $blueMûmakilDirectory; ?&gt; </h2>
     </div>
   </nav>
 </header>

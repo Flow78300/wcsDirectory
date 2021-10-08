@@ -7,8 +7,8 @@
     <?php include '_header.php' ?>
      <main>
          <section class="WCS-img"></section>
+         <div class="container-index">
          <section class="presentation-text">
-            <!--  <button><a href="trombi.php"><h1>Meet the Team</h1></a></button> -->
              <a href="trombi.php" class="button">Meet the Team</a>
             <p>Ils étaient 66 dans cette quête du Graal, ils ne sont plus que 14,
                 guidés par Jean-François, à la fin ils finiront tous Dev!
@@ -19,9 +19,7 @@
             </p>
 
         </section>
-        <!-- <section class="links-trombi">
-            <button><a href="trombi.php">Découvrez les ici</a></button>
-        </section>   --> 
+         </div>
 
     </main>
 
