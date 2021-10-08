@@ -10,11 +10,11 @@ body {
   }
 
 /* -- titre contact--*/
-form h1{
-  font-size: 50px;
+/* form h1{
+  font-size: 60px;
   color:#528bc0;
   text-align:center;
-}
+} */
 
 
 /* -- trombi mobile first--*/
@@ -51,6 +51,8 @@ form h1{
   width: max-content;
   padding: 1rem;
   margin: 1rem auto;
+  font-size: xx-large;
+  color:rgba(50, 118, 163, 0.75);
   background-color: white;
   box-shadow: var(--box-shadow-trombi);
 }
@@ -73,7 +75,7 @@ form h1{
 .trombi-card {
   border-radius: 10px;
   box-shadow: var(--box-shadow-trombi);
-  background-color: white;
+  background-color:white;
 }
 
 .trombi-card-body {
