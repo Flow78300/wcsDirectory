@@ -8,6 +8,6 @@
     <title>search</title>
 </head>
 <body>
-    <h1>Recherche Wilder par région</h1>
+    <h1>Erreur 404 Hello wilders ;-)</h1>
 </body>
 </html>
