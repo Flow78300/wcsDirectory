@@ -11,13 +11,13 @@
         <ul id="menu">
           <li><a href="index.php">Home</a></li>
           <li><a href="trombi.php">Trombi</a></li>
-          <li><a href="search.php">Wilders par région</a></li>
-          <li><a href="recrut.php">Recruteurs</a></li>
+          <li><a href="#">Wilders par région</a></li>
+          <li><a href="#">Recruteurs</a></li>
         </ul>
       </div>
     </nav>
     <div class="title">
-      <h2> &lt;?php $wcsDirectory; ?&gt; </h2>
+      <h2> &lt;?php $blueMumakilDirectory; ?&gt; </h2>
     </div>
   </nav>
 </header>
